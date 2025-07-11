@@ -99,3 +99,5 @@ if __name__ == '__main__':
     app.run()
     # Close connection
     cnx.close()
+
+# buongiorno
