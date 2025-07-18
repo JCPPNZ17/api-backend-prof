@@ -1,8 +1,8 @@
 import sqlalchemy as sa
 from sqlalchemy.orm import Mapped, mapped_column, sessionmaker, declarative_base
 
-# db = sa.create_engine("sqlite:///:memory:")
-db = sa.create_engine("mysql+pymysql://thomas:Th0M4s!@localhost/db_spesa")
+db = sa.create_engine("sqlite:///:memory:")
+# db = sa.create_engine("mysql+pymysql://thomas:Th0M4s!@localhost/db_spesa")
 Session = sessionmaker(bind=db)
 Base = declarative_base()
 
