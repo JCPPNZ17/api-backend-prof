@@ -76,56 +76,6 @@ def mostra_utenti():
         return utenti.__repr__()
     return 'Errore', 400
 
-
-@app.route("/aggiungiOggetto/")
-def aggiungi_oggetto():
-    '''
-    - aggiungere oggetto a lista
-        - nome utente
-        - lista della spesa
-        - oggetto
-    ''' 
-    nome = request.args.get('nome')
-    lista = request.args.get('lista')
-    oggetto = request.args.get('oggetto')
-    raise NotImplemented
-
-@app.route("/togliOggetto/")
-def togli_oggetto():
-    '''
-    - togliere oggetto a lista
-        - nome utente
-        - lista della spesa
-        - oggetto
-    '''
-    nome = request.args.get('nome')
-    lista = request.args.get('lista')
-    oggetto = request.args.get('oggetto')
-    raise NotImplemented
-
-@app.route("/vediLista/")
-def vedi_lista():
-    '''
-    - vedi lista della spesa
-        - nome utente
-        - lista della spesa
-    '''
-    nome = request.args.get('nome')
-    lista = request.args.get('lista')
-    raise NotImplemented
-
-@app.route("/rimuoviLista/")
-def rimuovi_lista():
-    '''
-    - rimuovi lista della spesa
-        - nome utente
-        - lista della spesa
-    '''
-    nome_utente = request.args.get('nome')
-    nome_lista = request.args.get('lista')
-    raise NotImplemented
-
-
 if __name__ == '__main__':
     app.debug = True
     app.run()    
