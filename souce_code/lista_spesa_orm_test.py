@@ -1,6 +1,8 @@
 # PER LANCIARE IL TEST USATE IL COMANDO:
 # pytest .\souce_code\lista_spesa_orm_test.py -q
 
+# DOCUMENTAZIONE : https://flask.palletsprojects.com/en/stable/testing/ #
+
 # test_app.py
 import pytest
 import sqlalchemy as sa
